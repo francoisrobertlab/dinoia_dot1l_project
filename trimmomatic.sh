@@ -14,10 +14,13 @@ if [[ -n "$CC_CLUSTER" ]]
 then
   module load StdEnv/2018.3
   module load trimmomatic/0.36
+  module load fastqc/0.11.8
 
   index=${SLURM_ARRAY_TASK_ID:-0}
   index=$((index+1))
 fi
+
+trimmomatic_jar_dir=${EBROOTTRIMMOMATIC:-.}
 
 sample=$(awk -v sample_index="$index" \
     '$0 !~ /[ \t]*#/ {ln++} ln == sample_index {print $1}' samples.txt)
@@ -25,7 +28,7 @@ sample="${sample%%[[:cntrl:]]}"
 
 echo "Processing sample $sample"
 
-java -jar trimmomatic.jar PE \
+java -jar "${trimmomatic_jar_dir}/trimmomatic-0.36.jar" PE \
     "${sample}_R1.fastq.gz" "${sample}_R2.fastq.gz" \
     "${sample}-paired_R1.fastq.gz" "${sample}-unpaired_R1.fastq.gz" \
     "${sample}-paired_R2.fastq.gz" "${sample}-unpaired_R2.fastq.gz" \

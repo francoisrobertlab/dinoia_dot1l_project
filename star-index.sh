@@ -29,8 +29,8 @@ echo "Generating index for S. Cerevisiae"
 
 STAR --runMode genomeGenerate \
   --genomeDir s_cerevisiae/star_index \
-  --genomeFastaFiles s_cerevisiae/s_cerevisiae.R64-1-1.fa \
+  --genomeFastaFiles s_cerevisiae/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa \
   --genomeSAindexNbases 10 \
-  --sjdbGTFfile s_cerevisiae/s_cerevisiae.R64-1-1.gtf \
+  --sjdbGTFfile s_cerevisiae/Saccharomyces_cerevisiae.R64-1-1.112.gtf \
   --runThreadN "$threads"
 

@@ -1,6 +1,6 @@
 library("DESeq2")
 
-count_matrix = read.csv("count_matrix.txt", sep="\t", row.names="Gene_ID")
+count_matrix = read.csv("m_musculus_counts.txt", sep="\t", row.names="Gene")
 
 coldata <- read.csv("samples-condition.txt", sep="\t", row.names="Sample")
 coldata$Condition <- factor(coldata$Condition)

@@ -21,8 +21,8 @@ This repo contains code for the TT-seq pipeline used in *Subramani et al.* (2025
 ### Download genomes
 
 ```shell
-wget https://github.com/francoisrobertlab/dinoia_mllt1_3_project/releases/download/1.0/GRCm38.primary_assembly.customCH12genome.fa.gz
-wget https://github.com/francoisrobertlab/dinoia_mllt1_3_project/releases/download/1.0/gencode.vM23.primary_assembly.customCH12.annotation.gff3.gz
+wget https://github.com/francoisrobertlab/dinoia_dot1l_project/releases/download/1.0/GRCm38.primary_assembly.customCH12genome.fa.gz
+wget https://github.com/francoisrobertlab/dinoia_dot1l_project/releases/download/1.0/gencode.vM23.primary_assembly.customCH12.annotation.gff3.gz
 wget https://ftp.ensembl.org/pub/release-112/fasta/saccharomyces_cerevisiae/dna/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.gz
 wget https://ftp.ensembl.org/pub/release-112/gtf/saccharomyces_cerevisiae/Saccharomyces_cerevisiae.R64-1-1.112.gtf.gz
 gunzip *.gz

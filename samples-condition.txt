@@ -1,7 +1,7 @@
 Sample	Condition
-Dot1l_KOB_1	Dot1l_KOB
-Dot1l_KOB_2	Dot1l_KOB
-Dot1l_KOB_3	Dot1l_KOB
-WTG_1	WTG
-WTG_2	WTG
-WTG_3	WTG
+Dot1l_KO_TT_seq_rep1	Dot1l_KOB
+Dot1l_KO_TT_seq_rep2	Dot1l_KOB
+Dot1l_KO_TT_seq_rep3	Dot1l_KOB
+WT_TT_seq_rep1	WTG
+WT_TT_seq_rep2	WTG
+WTG_3	WT_TT_seq_rep3

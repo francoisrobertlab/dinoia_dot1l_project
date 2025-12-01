@@ -1,7 +1,7 @@
-#Sample
-Dot1l_KOB_1
-Dot1l_KOB_2
-Dot1l_KOB_3
-WTG_1
-WTG_2
-WTG_3
+#Sample	SRR
+Dot1l_KO_TT_seq_rep1	SRR32555689
+Dot1l_KO_TT_seq_rep2	SRR32555688
+Dot1l_KO_TT_seq_rep3	SRR32555687
+WT_TT_seq_rep1	SRR32555692
+WT_TT_seq_rep2	SRR32555691
+WT_TT_seq_rep3	SRR32555690

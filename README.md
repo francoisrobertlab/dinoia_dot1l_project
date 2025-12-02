@@ -36,8 +36,12 @@ cp Saccharomyces_cerevisiae.R64-1-1.112.gtf s_cerevisiae
 
 ### Download FASTQ files
 
-> [!WARNING]  
-> Add SRA identifiers to samples.txt to download FASTQ.
+```shell
+awk 'NR > 1 {print $2}' samples.txt | xargs -L 1 prefetch
+awk 'NR > 1 {print $2}' samples.txt | xargs -L 1 fasterq-dump
+gzip *.fastq
+awk 'NR > 1 {system("rename " $2 "_ " $1 "_R *.fastq.gz")}' samples.txt
+```
 
 ### Trimming reads and alignment
 
